@@ -1,0 +1,523 @@
+:root {
+    --primary-color: #cc0812;
+    --secondary-color: #d90913;
+    --dark-color: #141414;
+    --tabs-dark: #000;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    --webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #fff;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .showcase {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: url("new-background.jpg") no-repeat center center/cover;
+  }
+  
+  .showcase::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 100px 80px 600px #000000, inset -100px -80px 600px #000000;
+  }
+  
+  .showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+  }
+  
+  .showcase-top img {
+    width: 170px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+  }
+  
+  .showcase-content {
+    position: relative;
+    margin: auto;
+    z-index: 2;
+  }
+  /*LOGIN FORM */
+.form-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto auto;
+	padding: 40px;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;		
+	width: 450px;
+	height: 500px;
+}
+
+.form-box .header-text {
+	font-size: 32px;
+	color: white;
+	padding-bottom: 30px;
+}
+.form-box input {
+	margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+}
+.form-box input[type=checkbox] {
+	display: none;
+}
+.form-box label {
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.form-box label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #ddd;
+}
+.form-box input[type=checkbox]:checked+label:before {
+	content: "\2713";
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
+}
+.form-box span {
+	font-size: 14px;
+}
+.form-box button {
+	background-color: var(--secondary-color);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+span a {
+	color: #BBB;
+}
+  
+
+  
+  /* Footer */
+  .footer {
+    max-width: 75%;
+    margin: 4rem auto 2rem;
+    overflow: auto;
+  }
+  
+  .foooter,
+  .footer a {
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .footer p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .footer li {
+    line-height: 1.9;
+  }
+  
+  /* Text Styles*/
+  .text-xl {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-lg {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-md {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-mdw {
+    font-size: 1.625rem;
+    color: #fff;
+    line-height: 1.3;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-dark {
+    color: #999;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 1 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+  }
+  
+  .btn-icon {
+    margin-left: 0.5rem;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .btn-rounded {
+    border-radius: 5px;
+  }
+  
+  .btn-xl {
+    font-size: 1.875rem;
+    padding: 1rem 1.5rem;
+    min-height: 70px;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+  }
+  
+  .x-btn {
+    color: #fff;
+    font-size: 2rem;
+    transform: rotate(45deg);
+  }
+  
+  .x-btn2 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+
+  
+  /* Hide/Show */
+  
+  .hide {
+    display: none;
+  }
+  
+  /* Media Queries */
+  
+  /* Media Large */
+  @media (max-width: 1100px) {
+    .showcase {
+      height: 80vh;
+      min-height: 700px;
+      max-height: 700px;
+    }
+  
+    .showcase-content {
+      margin-top: 7rem;
+    }
+  
+    .image img {
+      width: 300px;
+    }
+  
+    .text-xl {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .text-md {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .text-mdw {
+      font-size: 1.3rem;
+      color: #fff;
+      line-height: 1.3;
+    }
+  
+    .email input[type="email"] {
+      height: 59px;
+    }
+  
+    .btn-xl {
+      font-size: 1.5rem;
+      min-height: 50px;
+    }
+  }
+  
+  /* Media Medium */
+  @media (max-width: 850px) {
+    .showcase-top img {
+      width: 120px;
+    }
+  
+    .showcase::after {
+      box-shadow: inset 60px 60px 150px #000000, inset -60px -60px 150px #000000;
+    }
+  
+    .showcase {
+      height: 80vh;
+      min-height: 700px;
+      max-height: 700px;
+    }
+  
+    .showcase-content h1 {
+      font-size: 3rem;
+      max-width: 600px;
+    }
+  
+    .showcase-content p {
+      font-size: 1.4rem;
+      max-width: 500px;
+      padding-bottom: 5px;
+    }
+  
+    .email {
+      flex-direction: column;
+    }
+  
+    .email input {
+      margin-bottom: 1rem;
+    }
+  
+    .btn-xl {
+      font-size: 1rem;
+      padding: 1rem 1.7rem;
+      align-self: center;
+    }
+  
+    .tab-content-inner {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .image img {
+      width: 600px;
+    }
+  
+    .text-md {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+  
+    .tab-2-content-inner .image {
+      order: 2;
+    }
+  
+    .tab-2-content-inner .text {
+      order: 1;
+    }
+  
+    .faq {
+      max-width: 52%;
+      min-width: 600px;
+      margin: auto;
+      padding: 4.3rem 2.8rem 0 2.8rem;
+    }
+  
+    .showcase-content-2 p {
+      font-size: 1.5rem;
+      max-width: 500px;
+      padding-bottom: 5px;
+    }
+  }
+  
+  /* Media Small */
+  @media (max-width: 600px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  
+    .showcase-top a {
+      transform: translate(-20%, -75%);
+    }
+  
+    .showcase-top img {
+      width: 100px;
+    }
+  
+    .showcase-top a.btn {
+      font-size: 1rem;
+      padding: 0.3rem 0.8rem;
+    }
+  
+    .showcase {
+      height: 60vh;
+      min-height: 500px;
+      max-height: 500px;
+    }
+  
+    .showcase-content {
+      width: 90%;
+      margin-top: 3.5rem;
+    }
+  
+    .showcase-content h1 {
+      font-size: 1.7rem;
+    }
+  
+    .showcase-content h2 {
+      font-size: 1.2rem;
+    }
+  
+    .showcase-content p {
+      font-size: 1.1rem;
+      max-width: 400px;
+    }
+  
+    .email input[type="email"] {
+      height: 50px;
+      min-width: 400px;
+    }
+  
+    .image img {
+      width: 400px;
+    }
+  
+    .text-md {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .text-xl {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+  
+    .faq .text-xl {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+  
+    .text p {
+      margin: 1rem 1rem;
+    }
+  
+    .faq .text-mdw {
+      font-size: 1.2rem;
+    }
+  
+    .faq {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 2.5rem;
+      min-width: 350px;
+      max-width: 100%;
+    }
+  
+    .faq h1 {
+      padding-bottom: 0.5rem;
+    }
+  
+    .faq .text-xl {
+      font-size: 1.5rem;
+    }
+  
+    .faq-item {
+      margin-top: 0.5rem;
+    }
+  
+    .container-q {
+      max-width: 100%;
+    }
+  
+    .container-faq .container-q {
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+    }
+  
+    .tab-content-inner .text {
+      width: 350px;
+    }
+  
+    .showcase-content-2 {
+      margin-top: 1.5rem;
+      padding-bottom: 3rem;
+    }
+  
+    .showcase-content-2 p {
+      font-size: 1.2rem;
+      max-width: 70%;
+    }
+  
+    .footer .footer-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .email input[type="email"] {
+      min-width: 300px;
+    }
+  }
+  
